@@ -1,0 +1,25 @@
+{
+	"name": "hrnet-simple-modal",
+	"private": false,
+	"version": "1.0.0",
+	"description": "a simple modal component for HRnet project",
+	"main": "src/index.jsx",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "vite build"
+	},
+	"keywords": [
+		"modal",
+		"component",
+		"HRnet"
+	],
+	"author": "jdevis",
+	"license": "ISC",
+	"peerDependencies": {
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0"
+	},
+	"devDependencies": {
+		"vite": "^6.3.5"
+	}
+}
