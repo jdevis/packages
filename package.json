@@ -8,6 +8,11 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "vite build"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jdevis/packages.git"
+	},
+	"homepage": "https://github.com/jdevis/packages",
 	"keywords": [
 		"modal",
 		"component",
