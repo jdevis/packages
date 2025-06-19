@@ -1,4 +1,4 @@
-# HRNet Simple Modal
+# HRnet Simple Modal
 
 ## Description
 
@@ -28,7 +28,17 @@ This modal have a H2 html element
 
 ### `content` (boolean):
 
-Must contain HTML element (ex. <p classname='my-css-clss'>text content</p>; <form>...</form>).
+Must contain HTML element
+ex.
+
+```html
+<p classname="my-css-clss">text content</p>
+```
+
+```html
+<form>...</form>
+```
+
 Choose your structure and your css styles.
 
 ### `onClose` (callback function):
