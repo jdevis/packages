@@ -10,8 +10,9 @@ This provide a component for Vite and React project.
 #### **Requirements (minimal):**
 
 ```bash
-React   v19.1.0
-Vite    v6.3.5
+React     v19.1.0
+ReactDOM  v19.1.0
+Vite      v6.3.5
 ```
 
 #### **Command**
