@@ -19,6 +19,7 @@
   border-radius: .5em;
   box-shadow: 0 0 10px #000;
   text-align: left;
+  z-index: 1000;
 }
 .hrnetsm-close-modal {
   position: absolute;
@@ -30,6 +31,5 @@
   color: #fff;
   text-decoration: none;
   text-align: center;
-  line-height: 1.15;
   border-radius: 2em;
 }

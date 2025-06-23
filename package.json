@@ -1,7 +1,7 @@
 {
 	"name": "hrnet-simple-modal",
 	"private": false,
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "a simple modal component for HRnet project",
 	"main": "src/index.jsx",
 	"scripts": {

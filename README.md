@@ -42,6 +42,10 @@ ex.
 
 Choose your structure and your css styles.
 
+### `styles`
+
+You can add inline style with this props (ex. fontFace:'your font')
+
 ### `onClose` (callback function):
 
 This is the callback function to close the modal.
@@ -50,25 +54,7 @@ This is the callback function to close the modal.
 
 Example of how to integrate this modal into your project.
 
-First, create a div with ID for triggering the modal into your index.html
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title></title>
-	</head>
-	<body>
-		<div id="root"></div>
-		<!-- ID to refer for modal container -->
-		<div id="modalPortal"></div>
-		<script type="module" src="/src/main.jsx"></script>
-	</body>
-</html>
-```
-
-Then, import the component into your dedicated file
+Import the component into your dedicated file
 
 ```jsx
 import { useState } from 'react';
@@ -76,6 +62,7 @@ import { createPortal } from 'react-dom';
 import Modal from 'hrnet-simple-modal';
 
 function App() {
+	// create a state to control the toggle
 	const [isOpen, setIsOpen] = useState(false);
 
 	// create a function to toggle setIsOpen state
@@ -92,10 +79,13 @@ function App() {
 					<Modal
 						title='h2 title'
 						content='content display in the modal'
-						onClose={() => setIsOpen(false)} // this props must be a function
+						styles='' // can be empty
+						onClose={() => setIsOpen(false)} // this props must be a function it is used into onClick event of the close button on the modal
 					/>,
-					document.getElementById('modalPortal') //ID of the container in index.html
+					document.getElementById('modalPortal') // ID of the container where the modal will be rendered
 				)}
+			{/* Container for the modal */}
+			<div id='modalPortal'></div>
 		</>
 	);
 }
